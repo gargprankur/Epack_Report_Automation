@@ -32,6 +32,7 @@ class EpackReportMain(BaseClass):
         time.sleep(20)
         epack_status_dropdown = self._epack_home.epack_status_dropdown_method()
         epack_status_dropdown.click()
+        time.sleep(10)
 
         try:
             pre_epack_assigned = self._epack_home.select_pre_epack_assigned_method()
@@ -86,6 +87,7 @@ class EpackReportMain(BaseClass):
 
         output = build_table(data, "blue_light", font_size="small", font_family='Open Sans, sans-serif')
         SendEmail(output)
+        self.driver.close()
 
 
 if __name__ == '__main__':

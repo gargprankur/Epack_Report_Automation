@@ -8,7 +8,7 @@ class SendEmail:
         message = MIMEMultipart()
         message["Subject"] = "Epack Staus"
         message["From"] = "p.garg@dell.com"
-        to_addresses = ["prankur.garg1@emc.com", "Ravi.Bhat@Dell.com", "PavitraH.Gadagi@dell.com", "Swarajya.K.Parida@Dell.com", "Suhas.Sathyanarayana@Dell.com"]
+        to_addresses = ["prankur.garg1@emc.com", "Ravi.Bhat@Dell.com", "PavitraH.Gadagi@dell.com", "Swarajya.K.Parida@Dell.com", "Suhas.Sathyanarayana@Dell.com", "Vikas.Jaiswal@Dell.com"]
         message['To'] = ','.join(to_addresses)
         modified_html = f""" <html><body><p>Hi Team,.</p> 
         <p>Please find below list of Epacks/Pre Epacks which are in assigned state. For 
